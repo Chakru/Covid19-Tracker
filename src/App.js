@@ -33,7 +33,7 @@ function App() {
       .then(data => {
         setCountryInfo(data);
       });
-  });
+  }, []);
 
   useEffect(() => {
     //Async-> Sends a request, wait for it, do something with it
